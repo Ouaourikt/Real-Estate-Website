@@ -1,0 +1,813 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+:root {
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+}
+* {
+   font-family: 'Nunito', sans-serif;
+   text-decoration: none;
+   box-sizing: border-box;
+   padding: 0; margin: 0;
+   text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+section {
+    padding: 2rem 9%;
+    background-color: #f3f3f3;
+}
+
+header {
+    font-family: 'Nunito', sans-serif;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: #f7f7f7;
+    padding: 1.5rem 9%;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow:  0 .5rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    
+}
+
+header .logo  {
+   font-size: 2.5rem;
+   color: #333;
+}
+
+header .logo span {
+    font-weight: bolder;
+    color: var(--red);
+}
+
+header .navbar a {
+    font-size: 2rem;
+    color: #333;
+    padding: 0rem 1.5rem;
+}
+
+header  #menu-bars {
+    display: initial;
+    position: absolute;
+    top: -100%;
+   
+}
+
+header .navbar a:hover {
+    color: var(--red);
+}
+
+
+header .icon a{
+    color: var(--red);
+    font-size: 2rem;
+    padding: 0px 1.5rem;
+    background:var(--light-red);
+    height:4.5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+}
+
+header .icon a:hover{
+    color: #f7f7f7;
+    background-color: var(--red);
+}
+/* sction home */
+
+.home {
+    min-height: 100vh;
+    background-image: url(../image/home-bg.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.home form {
+    background: #fff;
+    margin-top: 7rem;
+    width: 70rem;
+    padding: 2rem;
+    
+    box-shadow:   .5rem .5rem .5rem .5rem rgba(0, 0, 0, 0.1);
+    border-radius: .2rem ;
+}
+
+.home form h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+}
+
+.home form .button {
+    display: flex;
+    gap: 2.5rem;
+    padding: 2rem;
+}
+
+.home form .button .btn {
+    flex: 1;
+    background: var(--light-red);
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    color: var(--red);
+    border-radius: .5rem ;
+}
+
+
+.home form  .bnt {
+     display: flex;
+     gap: 2.5rem;
+     padding: .5rem;
+}
+
+.home form .button .btn:hover {
+    color: #fff;
+    background: var(--red);
+}
+
+.home form  .bnt .btn {
+    background-color: var(--light-red);
+    width: 100%;
+    text-align: center;
+    color: var(--red);
+    border-radius: .5rem;
+    font-size: 2rem;
+    padding: .7rem;
+}
+
+.home form .bnt .btn:hover {
+    color: #fff;
+    background: var(--red);
+}
+
+
+.home form .inputbox  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1.5rem;
+    
+}
+
+.home form .inputbox  input,
+.home form .inputbox  select{
+    flex: 1 1 25rem;
+    width: 100%;
+    height: 4rem;
+    box-shadow: 1rem solid rgba(0,0,0,.4);
+    padding:  1rem ;
+    font-size: 1.5rem;
+    text-transform: none;
+
+}
+
+/* section service */
+
+.service {
+    background-color: #f3f3f3;
+}
+
+.service .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    max-width: 88%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.service  h1 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    color: #333;
+    position: relative;
+}
+
+
+.service  h1 span {
+    background: var(--light-red);
+    padding: .5rem;
+    color: var(--red);
+}
+.service .container .contente {
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.2);
+    text-align: center;
+    padding:2rem;
+}
+
+.service .container .contente h3{
+    font-size: 2.5rem; 
+}
+
+.service .container .contente p {
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: .5rem 0;
+}
+
+.service .container .contente .bn  {
+    margin-top: .9rem;
+}
+.service .container .contente .bn .btn {
+    background-color: var(--light-red);
+    width: 100%;
+    text-align: center;
+    color: var(--red);
+    border-radius: .5rem;
+    font-size: 2rem;
+    padding: .7rem;
+    
+}
+
+.service .container .contente .bn  .btn:hover {
+    color: #fff;
+    background: var(--red);
+}
+
+
+/* section fetured */
+.featured .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5;
+    
+}
+
+.featured h1 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    color: #333;
+    position: relative;
+}
+
+
+.featured  h1 span {
+    background: var(--light-red);
+    padding: .5rem;
+    color: var(--red);
+}
+.featured .box-container .box {
+    margin:.7rem;
+    border-radius: .5rem ;
+    border: .2rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    flex: 1 1  30rem;
+    background: #fff;
+    overflow: hidden;
+    
+}
+
+.featured .box-container .box .image-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 25rem;
+    
+}
+
+
+.featured .box-container .box .image-container img{
+    transition: .2s linear;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.featured .box-container .box .image-container img{
+    transform: scale(1.1);
+}
+
+.featured .box-container .box .image-container .info {
+    display: flex;
+    position: absolute;
+    left: 1rem; right: 0;
+}
+
+.featured .box-container .box .image-container .info h3 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color:#fff;
+    background:rgba(0,0,0,.3);
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    margin-left: 1rem;
+}
+
+.featured .box-container .box .image-container .icons {
+    display: flex;
+    position: absolute;
+    bottom: 1rem; right: 0;
+}
+
+.featured .box-container .box .image-container .icons a {
+    color: #fff;
+    display: flex;
+    font-size: 1.5rem;
+    padding: .7rem;
+    margin: .5rem;
+    background: rgba(0,0,0,.4);
+    border-radius: .5rem;
+    
+
+}
+
+.featured .box-container .box .image-container .icons a h3{
+    font-weight: 500;
+    padding-left: .5rem;
+}
+
+.featured .box-container .box .image-container .icons a:hover{
+    background-color: var(--red);
+}
+
+
+
+
+.featured .box-container .centent .price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5;
+    padding: 2rem;
+    align-items: center;
+}
+
+.featured .box-container .centent .price h3 {
+    color: var(--red);
+    font-size: 2rem;
+    padding-top: .7rem;
+    margin-right: auto;
+}
+
+.featured .box-container .centent .price a {
+    margin-left: 3rem;
+    color:  rgba(0,0,0,.4);
+    font-size: 1.5rem;
+    padding: .7rem;
+    background-color: rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+
+.featured .box-container .centent .price a:hover {
+    color: #fff;
+    background-color: var(--red);
+
+}
+
+.featured .box-container .centent  .par-container {
+    padding-left: 2rem;
+}
+
+.featured .box-container .centent  .par-container  h3 {
+    font-size: 2.5rem;
+    color: #000;
+
+}
+
+.featured .box-container .centent  .par-container p {
+    font-size: 1.7rem;
+    color: rgba(0,0,0,.5);
+    line-height: 2.5rem;
+
+}
+
+.featured .box-container .centent  .content-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.featured .box-container .centent  .content-icons h3 {
+    color: rgba(0,0,0,.5);
+    border: .1rem solid   rgba(0,0,0,.2);
+    padding: 1rem 2rem;
+}
+
+.featured .box-container .centent  .content-icons i {
+    color: #000;
+}
+
+.featured .box-container .centent  .content-icons h3:hover {
+    color: #fff;
+    background: var(--red);
+}
+
+
+
+.featured .box-container .centent .button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5;
+    padding: 1.5rem;
+   
+}
+
+
+.featured .box-container .centent .button .btn {
+    background: var(--light-red);
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    color: var(--red);
+    border-radius: .5rem ;
+    flex: 1;
+    padding: .7rem;
+    margin: .5rem;
+}
+
+.featured .box-container .centent .button .btn:hover {
+    color: #fff;
+    background: var(--red);
+}
+/* ection agen*/
+
+
+
+.agents h1 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    color: #333;
+    position: relative;
+}
+
+
+.agents  h1 span {
+    background: var(--light-red);
+    padding: .5rem;
+    color: var(--red);
+}
+
+.agents .agent-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5;
+   
+}
+
+
+.agents .co-ag {
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.3);
+    border-radius: .7rem;
+    text-align: center;
+    padding:2rem;
+    position: relative;
+    width:26rem;
+    margin: .7rem;
+    flex: 1 1  25rem;
+}
+
+.agents .co-ag  .fa-envelope {
+    position: absolute;
+    top: 1.5rem; left: 2rem;
+    font-size: 2rem;   
+    color: #333;
+}
+
+.agents .co-ag  .fa-phone{
+    position: absolute;
+    top: 1.5rem; right: 2rem;
+    font-size: 2rem;   
+    color: #333;
+}
+
+.agents .co-ag a:hover {
+    color: var(--red);
+}
+
+.agents .co-ag img {
+    border-radius: 50%;
+    border: .5rem solid rgba(0,0,0,.1);
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.agents .co-ag h3 {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #000;
+}
+
+.agents .co-ag span {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--red);
+}
+
+
+.agents .co-ag .share {
+    padding-top: 1rem;
+}
+
+.agents .co-ag .share a{
+    margin: .7rem;
+    color: rgba(0,0,0,.5);
+    font-size: 2rem;
+    background: rgba(0,0,0,.1);
+    padding: .7rem;
+    border-radius: .5rem;
+
+}
+
+
+.agents .co-ag .share a:hover {
+    color: #fff;
+    background: var(--red);
+}
+
+
+/* section contact*/
+.contact h1 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    color: #333;
+    position: relative;
+}
+
+
+.contact  h1 span {
+    background: var(--light-red);
+    padding: .5rem;
+    color: var(--red);
+}
+
+.contact .cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5;
+}
+
+.contact .cont .cont1 {
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.3);
+    border-radius: .7rem;
+    text-align: center;
+    padding:2rem;
+    overflow: hidden;
+    position: relative;
+    margin: .7rem;
+    flex:  1 1 35rem;
+}
+
+.contact .cont .cont1 h3 {
+    font-size: 2.5rem;
+    color: #333;
+    padding: 1rem;
+}
+
+.contact .cont .cont1 {
+    font-size: 2rem;
+    color: #555;
+}
+
+.contact .form-content {
+    display: flex;
+    border: .2rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .7rem;
+    padding: 1rem;
+    flex-wrap: wrap-reverse;
+    background: #fff;
+    overflow: hidden;
+    
+}
+
+.contact .form-content form {
+    flex:  1 1 50rem;
+    padding: .5rem 1rem;
+}
+
+.contact .form-content .map {
+    flex: 1 1 30rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.contact .form-content form .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .form-content form textarea,
+.contact .form-content .input-box input {
+    width: 100%;
+    margin-top: 1rem;
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    background: #f7f7f7;
+    border-radius: .5rem;
+    text-transform: none;
+    width:49%;
+    text-transform: none;
+}
+.contact .form-content form textarea {
+    width: 100%;
+    height: 20rem;
+    resize: none;
+}
+
+.contact .form-content textarea:focus,
+.contact .form-content .input-box input:focus{
+    background-color: var(--light-red);
+}
+.contact .form-content form .btn {
+    background: var(--light-red);
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    color: var(--red);
+    border-radius: .5rem ;
+    padding: 1rem 5rem;  
+}
+.contact .form-content form .but {
+    padding: 2rem 0rem;
+}
+.contact .form-content form .btn:hover {
+    color: #fff;
+    background: var(--red);
+}
+
+
+/* section footer */
+
+.footer .footer-container{
+    flex:  1 1 30rem;
+    border-radius: .5rem;
+    border: .2rem solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    padding: 1rem;
+}
+
+.footer .footer-container .box-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5;
+}
+
+
+
+.footer .footer-container .box {
+    flex: 1 1 25rem;
+}
+
+
+.footer .footer-container .box-container .box h3{
+    font-size: 2.5rem;
+    color:#333;
+    padding:.5rem 0;
+}
+
+
+.footer .footer-container .box-container .box a {
+    display: block;
+    position: relative;
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    color:#666;
+}
+
+.footer .footer-container .box-container .box a:hover{
+    color:var(--red);
+    text-decoration: underline;
+}
+
+
+.footer .footer-container .credit{
+    margin-top: 2rem;
+    padding:.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color:#333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+.footer .footer-container .credit span{
+    color:var(--red);
+}
+
+.footer .footer-container {
+    margin-bottom: 8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive navbar */
+
+@media (max-width:991px){ 
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 1.5rem 1rem;
+    }
+    section {
+        padding: 1.5rem;
+    }
+}
+
+
+
+@media (max-width:746px){ 
+
+
+
+    header #menu-bars {
+        display: initial;
+        position: absolute;
+        top: 1.5rem; left: 45%; right: 0;
+        font-size: 2rem;
+        background-color: var(--light-red);
+        height: 4.5rem;
+        width: 5rem;
+        line-height: 4rem;
+        color: var(--red);
+
+    }
+
+    
+      header .navbar{
+        position: absolute;
+        top:100%; right:0; left: 0;
+        background: #333;
+        border-top: .1rem solid rgba(255,255,255,.2);
+        padding:1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+    
+      header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    
+      header .navbar a{
+        display: block;
+        border-radius: .5rem;
+        padding:1.5rem;
+        margin:1.5rem 0;    
+        background:#222;
+        color: #fff;
+      }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
